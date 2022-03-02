@@ -43,11 +43,8 @@ public class BulletMove: ControlManager
             yield return wait;
         }
     }
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-
-
         if (collision.gameObject.tag == "WALL")
         {
             check = true;
@@ -55,7 +52,7 @@ public class BulletMove: ControlManager
             animator.SetBool("HIT", true);
             StartCoroutine(Delay());
         }
-        
+
 
         if (collision.gameObject.tag == "Enemy")
         {
@@ -65,6 +62,7 @@ public class BulletMove: ControlManager
             StartCoroutine(Delay());
         }
     }
+
 
     private IEnumerator Delay()
     {

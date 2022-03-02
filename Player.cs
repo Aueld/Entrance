@@ -16,14 +16,24 @@ public class Player : PlayerSetting
     {
         Move();
     }
+    private void FixedUpdate()
+    {
+        FixedMove();
+    }
+
+    private void FixedMove()
+    {
+        h = Input.GetAxis("Horizontal") * Speed;
+        v = Input.GetAxis("Vertical") * Speed;
+
+        transform.position += new Vector3(h, v, 0);
+    }
 
     protected override void Move()
     {
         if (Input.GetKeyDown(KeyCode.Space) && MoveJudment() && !rollCheck)
             StartCoroutine(CrtRoll());
 
-        h = Input.GetAxis("Horizontal") * Speed;
-        v = Input.GetAxis("Vertical") * Speed;
 
         KeyState();
 
@@ -35,9 +45,6 @@ public class Player : PlayerSetting
 
         else if (v > 0)
             HorizontalSet(h, (int)AniState.Back, (int)AniState.BackSide, 3);
-
-        transform.position += new Vector3(h, v, 0);
-
     }
 
     protected override void KeyDown_E()
@@ -147,7 +154,7 @@ public class Player : PlayerSetting
         float time = 2.5f;
         float minTime;
 
-        Speed *= 5;
+        Speed *= 2;
         minTime = 0.003f / time;
 
         while (time > 0f)
@@ -157,7 +164,7 @@ public class Player : PlayerSetting
                 Invincible = false;
                 animator.SetBool("Roll", false);
                 rollCheck = false;
-                Speed = 0.01f;
+                Speed = 0.08f;
 
                 spriteRenderer.color = color;
                 break;
@@ -214,6 +221,7 @@ public class Player : PlayerSetting
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+
         if (Invincible)
             return;
 
@@ -230,7 +238,8 @@ public class Player : PlayerSetting
 
         if (collision.gameObject.layer == 6)
         {
-            SceneManager.LoadScene("GameDengeonScene");
+            LoadSceneController.LoadScene("GameDengeonScene");
+            //SceneManager.LoadScene("GameDengeonScene");
         }
     }
 }

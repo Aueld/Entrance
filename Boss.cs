@@ -26,7 +26,7 @@ public class Boss : Unit
 
     private void OnEnable()
     {
-        HP = 100;
+        HP = 125;
 
         Check = false;
         try {
