@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player : PlayerSetting
 {
@@ -11,6 +12,7 @@ public class Player : PlayerSetting
     private Enemy enemy;
     private float shortDis;
     private float distance;
+    private bool coolTime = false;
 
     private void Update()
     {
@@ -32,7 +34,9 @@ public class Player : PlayerSetting
     protected override void Move()
     {
         if (Input.GetKeyDown(KeyCode.Space) && MoveJudment() && !rollCheck)
+        {
             StartCoroutine(CrtRoll());
+        }
 
 
         KeyState();
@@ -96,6 +100,7 @@ public class Player : PlayerSetting
         }
         if(HP <= 0)
         {
+            GameManager.Instance.GameOver();
             //Debug.Log("플레이어 Finish");
         }
     }
@@ -151,8 +156,13 @@ public class Player : PlayerSetting
         animator.SetBool("Roll", true);
         rollCheck = true;
 
+        roll.GetComponent<Image>().fillAmount = 0;
+
         float time = 2.5f;
         float minTime;
+        float cool;
+
+        cool = time;
 
         Speed *= 2;
         minTime = 0.003f / time;
@@ -170,12 +180,17 @@ public class Player : PlayerSetting
                 break;
             }
 
+            roll.GetComponent<Image>().fillAmount = (1.0f / time);
+            //yield return new WaitForFixedUpdate();
+
             time -= 0.1f;
             Speed -= minTime;
 
             yield return Wait;
         }
     }
+
+
 
     private IEnumerator Invincibility()
     {

@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class PlayerSetting : Unit
 {
+    protected GameObject roll;
 
     protected Shot shot;
     protected CursorMouse cursorMouse;
@@ -43,6 +44,7 @@ public class PlayerSetting : Unit
         shot = GameObject.FindGameObjectWithTag("Gun").GetComponentInChildren<Shot>();
         cursorMouse = GameObject.FindGameObjectWithTag("Cursor").GetComponent<CursorMouse>();
         pin = GameObject.FindWithTag("Gun");
+        roll = GameObject.FindWithTag("Roll");
 
         keyDictionary = new Dictionary<KeyCode, Action>
         {

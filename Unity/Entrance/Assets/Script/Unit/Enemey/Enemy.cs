@@ -11,12 +11,17 @@ public class Enemy : Unit
     private GlitchEffect glitchEffect;
     private CircleCollider2D hitBox;
 
+    private Vector2 SPos;
+
     private float DelayTime = 5f;
 
     private bool playerCheck = false;
+    private bool wallCheck = false;
 
     void Start()
     {
+        SPos = transform.position;
+
         Check = false;
         glitchEffect = Camera.main.GetComponent<GlitchEffect>();
         hitBox = GetComponent<CircleCollider2D>();
@@ -25,6 +30,8 @@ public class Enemy : Unit
 
     private void OnEnable()
     {
+        SPos = transform.position;
+
         HP = 3;
 
         Check = false;
@@ -63,6 +70,13 @@ public class Enemy : Unit
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.name == "Walls")
+        {
+            Debug.Log("dkdkdkdkkdkkk");
+            wallCheck = true;
+            transform.position = Vector2.Lerp(transform.position, SPos, Time.deltaTime);
+        }
+
         if (collision.gameObject.tag == "bullet")
         {
             Debug.Log("HIT");
@@ -105,7 +119,7 @@ public class Enemy : Unit
         if (Rand == 0)
             Rand = 1;
 
-        Pos = new Vector2(RandX * Rand, RandY * Rand);
+        Pos = SPos + new Vector2(RandX * Rand, RandY * Rand);
 
         UnitLR(5);
 
@@ -118,7 +132,16 @@ public class Enemy : Unit
             }
 
 
-            transform.position = Vector2.Lerp(transform.position, Pos, Time.deltaTime * DelayTime);
+            if (!wallCheck)
+            {
+                transform.position = Vector2.Lerp(transform.position, Pos, Time.deltaTime * DelayTime);
+            }
+            else
+            {
+                wallCheck = false;
+                Check = false;
+                break;
+            }
 
             time -= 0.1f;
             yield return Wait;

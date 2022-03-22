@@ -31,7 +31,7 @@ public class EBulletMove : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "WALL")
+        if (collision.gameObject.name == "Walls")
         {
             check = true;
             animator.SetBool("HIT", true);

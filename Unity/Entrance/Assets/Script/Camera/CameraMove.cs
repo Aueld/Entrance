@@ -14,13 +14,22 @@ public class CameraMove : BulletMove
 
     private void Start()
     {
+        Invoke("Loading", 1f);
+
         StartCoroutine(Updater());
+    }
+
+    private void Loading()
+    {
+        transform.position = target.transform.position;
     }
 
     private IEnumerator Updater()
     {
         while (true)
         {
+
+            // 마우스 위치
             mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             FixedPos = new Vector3(

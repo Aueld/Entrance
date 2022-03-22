@@ -6,7 +6,10 @@ public class GameManager : MonoBehaviour
 {
     private static GameManager instance = null;
     private int level = 1;
-    
+    private bool gameOver = false;
+
+    public GameObject GameOverUI;
+
     void Awake()
     {
         if (null == instance)
@@ -35,26 +38,27 @@ public class GameManager : MonoBehaviour
 
     public void InitGame()
     {
-
+        GameOverUI.SetActive(false);
     }
 
     public void PauseGame()
     {
-
+        Time.timeScale = 0;
     }
 
     public void ContinueGame()
     {
-
+        Time.timeScale = 1;
     }
 
     public void RestartGame()
     {
-
+        Time.timeScale = 1;
     }
 
-    public void StopGame()
+    public void GameOver()
     {
-
+        Time.timeScale = 0;
+        GameOverUI.SetActive(true);
     }
 }
