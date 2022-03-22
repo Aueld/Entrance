@@ -18,7 +18,7 @@ public class Spawner : Unit
     {
         for (int i = 0; i < 10; i++)
         {
-            Pos = new Vector2(0, 0);
+            Pos = GameObject.Find("Player").transform.position;
 
             Enemies.Add(Instantiate(Enemy, Pos, Quaternion.identity));
             Enemies[i].transform.parent = parent.transform;

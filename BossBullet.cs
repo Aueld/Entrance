@@ -26,7 +26,7 @@ public class BossBullet : ShotPatterns
     void Update()
     {
         time++;
-        if (time > 500)
+        if (time > 200)
         {
             time = 0;
             SearchPlayerWithBoss();

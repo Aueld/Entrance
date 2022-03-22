@@ -30,7 +30,7 @@ public class PlayerSetting : Unit
     {
         rollCheck = false;
 
-        Speed = 0.01f;
+        Speed = 0.08f;
         animator = GetComponent<Animator>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         color = new Color(1, 1, 1, 1);

@@ -8,7 +8,8 @@ public class ScenesManager : MonoBehaviour
 {
     public void OnClickStartButton()
     {
-        SceneManager.LoadScene("GameHomeScene");
+        LoadSceneController.LoadScene("GameHomeScene");
+        //SceneManager.LoadScene("GameHomeScene");
     }
 
     public void OnClickLoadGame()
