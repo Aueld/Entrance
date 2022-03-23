@@ -13,7 +13,6 @@ public class CursorFollow : ControlManager
         while (true)
         {
             mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
             transform.LookAt(mouse);
 
             yield return wait;
