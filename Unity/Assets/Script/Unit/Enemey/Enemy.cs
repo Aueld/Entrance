@@ -9,6 +9,7 @@ public class Enemy : Unit
 
     private GlitchEffect glitchEffect;
     private CircleCollider2D hitBox;
+    private Animator ani;
 
     private Vector2 SPos;
 
@@ -25,6 +26,7 @@ public class Enemy : Unit
         player = GameObject.FindWithTag("Player");
         glitchEffect = Camera.main.GetComponent<GlitchEffect>();
         hitBox = GetComponent<CircleCollider2D>();
+        ani = GetComponent<Animator>();
 
     }
 
@@ -72,7 +74,6 @@ public class Enemy : Unit
     {
         if (collision.gameObject.name == "Walls")
         {
-            Debug.Log("dkdkdkdkkdkkk");
             wallCheck = true;
             transform.position = Vector2.Lerp(transform.position, SPos, Time.deltaTime);
         }
@@ -108,6 +109,7 @@ public class Enemy : Unit
 
     private IEnumerator PosMove()
     {
+        ani.SetBool("Move", true);
         float time = 3f;
 
         RandX = UnityEngine.Random.Range(-5f, 5f);
@@ -151,8 +153,9 @@ public class Enemy : Unit
 
     private IEnumerator WaitMove()
     {
+        ani.SetBool("Move", false);
         Check = true;
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds((float)UnityEngine.Random.Range(2, 5));
 
         StartCoroutine(PosMove());
     }
