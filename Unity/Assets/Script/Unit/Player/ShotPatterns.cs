@@ -41,7 +41,7 @@ public class ShotPatterns : MonoBehaviour
     List<float> v = new List<float>();
     List<float> xx = new List<float>();
 
-    protected AudioSource audioSource;
+    public AudioSource audioSource;
 
     private void Start()
     {
@@ -89,7 +89,7 @@ public class ShotPatterns : MonoBehaviour
         shortDis = Vector3.Distance(gameObject.transform.position, Player.transform.position);
         //Debug.Log(shortDis);
 
-        if (shortDis < 10f)
+        if (shortDis < 20f)
         {
             //Center = Player.transform;
 

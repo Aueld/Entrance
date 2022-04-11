@@ -25,6 +25,9 @@ public class BossBullet : ShotPatterns
 
     void Update()
     {
+        if (GameManager.Instance.gameOver || GameManager.Instance.gameEnd)
+            return;
+
         time++;
         if (time > 200)
         {

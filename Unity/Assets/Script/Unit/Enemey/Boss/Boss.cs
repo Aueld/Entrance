@@ -2,14 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Boss : Unit
 {
+    public GameObject GB_HP_Bar;
+    public Image HPimg;
 
     private GameObject player;
 
     private GlitchEffect glitchEffect;
     private CircleCollider2D hitBox;
+    private SpriteRenderer spriteRenderer;
 
     private float DelayTime = 5f;
 
@@ -22,7 +26,8 @@ public class Boss : Unit
         player = GameObject.FindWithTag("Player");
         glitchEffect = Camera.main.GetComponent<GlitchEffect>();
         hitBox = GetComponent<CircleCollider2D>();
-
+        GB_HP_Bar.SetActive(false);
+        spriteRenderer = GetComponent<SpriteRenderer>();
     }
 
     private void OnEnable()
@@ -44,8 +49,8 @@ public class Boss : Unit
 
         if (!playerCheck)
         {
-            if (!Check)
-                StartCoroutine(WaitMove());
+            //if (!Check)
+                //StartCoroutine(WaitMove());
         }
         else
         {
@@ -57,10 +62,19 @@ public class Boss : Unit
     {
         //Debug.Log("근접 공격!, 적 남은 체력 : " + HP);
         HP--;
+
+
+        HPimg.fillAmount = HP / 125f;
+
         if (HP < 1)
         {
+            GameManager.Instance.GameEnd();
+
+
             StartCoroutine(Glitch());
+
         }
+        StartCoroutine(SeeHPBar());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -87,11 +101,10 @@ public class Boss : Unit
     protected override void UnitLR(int size)
     {
         if (transform.position.x > Pos.x)
-            LR = -1;
+            spriteRenderer.flipX = true;
         else
-            LR = 1;
+            spriteRenderer.flipX = false;
 
-        transform.localScale = new Vector2(size * LR, size);
     }
 
     private IEnumerator PosMove()
@@ -134,6 +147,12 @@ public class Boss : Unit
         yield return new WaitForSeconds(5f);
 
         StartCoroutine(PosMove());
+    }
+    private IEnumerator SeeHPBar()
+    {
+        GB_HP_Bar.SetActive(true);
+        yield return new WaitForSeconds(50f);
+        //GB_HP_Bar.SetActive(false);
     }
 
     protected override IEnumerator Glitch()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CameraMove : BulletMove
 {
@@ -14,7 +15,8 @@ public class CameraMove : BulletMove
 
     private void Start()
     {
-        Invoke("Loading", 1f);
+        if (SceneManager.GetActiveScene().name == "GameDengeonScene")
+            Invoke("Loading", 1f);
 
         StartCoroutine(Updater());
     }

@@ -1,0 +1,1704 @@
+fileFormatVersion: 2
+guid: 7937ab408c4232544b1883c7d96cd5cf
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2736969765158611660
+    second: TouhouBullets_0
+  - first:
+      213: 8228377701477776005
+    second: TouhouBullets_1
+  - first:
+      213: 7242282908571751504
+    second: TouhouBullets_2
+  - first:
+      213: 480829798060691972
+    second: TouhouBullets_3
+  - first:
+      213: -4489032366116867702
+    second: TouhouBullets_4
+  - first:
+      213: 2531962598053585495
+    second: TouhouBullets_5
+  - first:
+      213: 6564800000735645362
+    second: TouhouBullets_6
+  - first:
+      213: 8928024198353238606
+    second: TouhouBullets_7
+  - first:
+      213: 1978560316486328459
+    second: TouhouBullets_8
+  - first:
+      213: -152905049485356663
+    second: TouhouBullets_9
+  - first:
+      213: -2282427025849096547
+    second: TouhouBullets_10
+  - first:
+      213: 8231867974100764791
+    second: TouhouBullets_11
+  - first:
+      213: -8837756852922734125
+    second: TouhouBullets_12
+  - first:
+      213: -3675312711881632073
+    second: TouhouBullets_13
+  - first:
+      213: 9020584196761736337
+    second: TouhouBullets_14
+  - first:
+      213: 535444436382651937
+    second: TouhouBullets_15
+  - first:
+      213: 4268707922024226594
+    second: TouhouBullets_16
+  - first:
+      213: -2103253655023499056
+    second: TouhouBullets_17
+  - first:
+      213: -4160422460858766689
+    second: TouhouBullets_18
+  - first:
+      213: 9099550568695464276
+    second: TouhouBullets_19
+  - first:
+      213: -1724887994832887799
+    second: TouhouBullets_20
+  - first:
+      213: -5712633159542550140
+    second: TouhouBullets_21
+  - first:
+      213: -6180937610712801672
+    second: TouhouBullets_22
+  - first:
+      213: -4266070889068078779
+    second: TouhouBullets_23
+  - first:
+      213: -4474491514131346349
+    second: TouhouBullets_24
+  - first:
+      213: -5956029462915440472
+    second: TouhouBullets_25
+  - first:
+      213: 4520761117778958315
+    second: TouhouBullets_26
+  - first:
+      213: -7021725689500228688
+    second: TouhouBullets_27
+  - first:
+      213: 3524935576330560506
+    second: TouhouBullets_28
+  - first:
+      213: -4471150756823116063
+    second: TouhouBullets_29
+  - first:
+      213: 5662949120395367812
+    second: TouhouBullets_30
+  - first:
+      213: -1989244183498350834
+    second: TouhouBullets_31
+  - first:
+      213: -7519143329815781733
+    second: TouhouBullets_32
+  - first:
+      213: 1269718266888419353
+    second: TouhouBullets_33
+  - first:
+      213: -2749799397891258420
+    second: TouhouBullets_34
+  - first:
+      213: -2646322117563031072
+    second: TouhouBullets_35
+  - first:
+      213: -4756486122997282206
+    second: TouhouBullets_36
+  - first:
+      213: 6028669775672039602
+    second: TouhouBullets_37
+  - first:
+      213: 8183142249986192822
+    second: TouhouBullets_38
+  - first:
+      213: 4153999923358127585
+    second: TouhouBullets_39
+  - first:
+      213: 2177165639597262305
+    second: TouhouBullets_40
+  - first:
+      213: 5447777671914165680
+    second: TouhouBullets_41
+  - first:
+      213: -2454446435530698797
+    second: TouhouBullets_42
+  - first:
+      213: -6801168529455856206
+    second: TouhouBullets_43
+  - first:
+      213: 6829861109540351347
+    second: TouhouBullets_44
+  - first:
+      213: 7107911531650533017
+    second: TouhouBullets_45
+  - first:
+      213: 2995105647543702961
+    second: TouhouBullets_46
+  - first:
+      213: -3013454857119215153
+    second: TouhouBullets_47
+  - first:
+      213: -3584942290372333896
+    second: TouhouBullets_48
+  - first:
+      213: 8294771339960220094
+    second: TouhouBullets_49
+  - first:
+      213: -2094140281273703653
+    second: TouhouBullets_50
+  - first:
+      213: -2003290070400323992
+    second: TouhouBullets_51
+  - first:
+      213: 9051170055131507139
+    second: TouhouBullets_52
+  - first:
+      213: -5531996318690890425
+    second: TouhouBullets_53
+  - first:
+      213: 1636484301718181261
+    second: TouhouBullets_54
+  - first:
+      213: 8187229189405450954
+    second: TouhouBullets_55
+  - first:
+      213: -4406199303462573477
+    second: TouhouBullets_56
+  - first:
+      213: -6004908307259416595
+    second: TouhouBullets_57
+  - first:
+      213: -6038421767312185884
+    second: TouhouBullets_58
+  - first:
+      213: -7333475444146298545
+    second: TouhouBullets_59
+  - first:
+      213: 5117643041612992440
+    second: TouhouBullets_60
+  - first:
+      213: -7492199959996407288
+    second: TouhouBullets_61
+  - first:
+      213: 5430643362140793515
+    second: TouhouBullets_62
+  - first:
+      213: -3687394094832074095
+    second: TouhouBullets_63
+  - first:
+      213: 6872682112003892718
+    second: TouhouBullets_64
+  - first:
+      213: 7090791642779491084
+    second: TouhouBullets_65
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TouhouBullets_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 559
+        width: 276
+        height: 269
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4359cbaef74540ad0800000000000000
+      internalID: -2736969765158611660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 820
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58af3567ce1113270800000000000000
+      internalID: 8228377701477776005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_2
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 824
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0545d402fe1c18460800000000000000
+      internalID: 7242282908571751504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_3
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 824
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40294de57204ca600800000000000000
+      internalID: 480829798060691972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_4
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 824
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a817f50d8d0c3b1c0800000000000000
+      internalID: -4489032366116867702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_5
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 824
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7522f896196532320800000000000000
+      internalID: 2531962598053585495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_6
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 824
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2be0551a1dada1b50800000000000000
+      internalID: 6564800000735645362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 824
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4abfe8a4b6b6eb70800000000000000
+      internalID: 8928024198353238606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_8
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 824
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b802adeff12457b10800000000000000
+      internalID: 1978560316486328459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_9
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 824
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 981df09eaa5c0edf0800000000000000
+      internalID: -152905049485356663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 824
+        width: 6
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d96638a76b03350e0800000000000000
+      internalID: -2282427025849096547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 824
+        width: 7
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778c032ee487d3270800000000000000
+      internalID: 8231867974100764791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_12
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 824
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d9244a77faf95580800000000000000
+      internalID: -8837756852922734125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_13
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 824
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b651d9af8aaefcc0800000000000000
+      internalID: -3675312711881632073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_14
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 824
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1945c7aa88d8f2d70800000000000000
+      internalID: 9020584196761736337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_15
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 824
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1261c83c0e74e6700800000000000000
+      internalID: 535444436382651937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_16
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 805
+        width: 80
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22f562e0d3f7d3b30800000000000000
+      internalID: 4268707922024226594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_17
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 806
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d848cbb1fdbfc2e0800000000000000
+      internalID: -2103253655023499056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_18
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 806
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ae4f090d53346c0800000000000000
+      internalID: -4160422460858766689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_19
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 806
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4510cced709184e70800000000000000
+      internalID: 9099550568695464276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_20
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 806
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90066aee187ff08e0800000000000000
+      internalID: -1724887994832887799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_21
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 806
+        width: 31
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48159518866a8b0b0800000000000000
+      internalID: -5712633159542550140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_22
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 806
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87e9c96bdf5e83aa0800000000000000
+      internalID: -6180937610712801672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_23
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 806
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5495676012fdbc4c0800000000000000
+      internalID: -4266070889068078779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_24
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 806
+        width: 31
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35c83bdbca967e1c0800000000000000
+      internalID: -4474491514131346349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_25
+      rect:
+        serializedVersion: 2
+        x: 276
+        y: 676
+        width: 256
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a02a2782cee75da0800000000000000
+      internalID: -5956029462915440472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_26
+      rect:
+        serializedVersion: 2
+        x: 403
+        y: 576
+        width: 129
+        height: 166
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7dc9bd848fcbe30800000000000000
+      internalID: 4520761117778958315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_27
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 564
+        width: 123
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b3aa1720b1dd8e90800000000000000
+      internalID: -7021725689500228688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_28
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 645
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af3e1531b361be030800000000000000
+      internalID: 3524935576330560506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_29
+      rect:
+        serializedVersion: 2
+        x: 375
+        y: 612
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6d65a631843f1c0800000000000000
+      internalID: -4471150756823116063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_30
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 600
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 485d64ea836d69e40800000000000000
+      internalID: 5662949120395367812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_31
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 600
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0f911f54f8c464e0800000000000000
+      internalID: -1989244183498350834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_32
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 564
+        width: 91
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9e151bcaf2a6a790800000000000000
+      internalID: -7519143329815781733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_33
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 562
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91875b65902fe9110800000000000000
+      internalID: 1269718266888419353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_34
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 270
+        width: 276
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc7cb154400c6d9d0800000000000000
+      internalID: -2749799397891258420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_35
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 556
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1656d0e00664bd0800000000000000
+      internalID: -2646322117563031072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_36
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 556
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26a0ca372119dfdb0800000000000000
+      internalID: -4756486122997282206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_37
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 556
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8d01f38332aa350800000000000000
+      internalID: 6028669775672039602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 556
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b5faec258c509170800000000000000
+      internalID: 8183142249986192822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_39
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 556
+        width: 8
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e5d2c4ebe8f5a930800000000000000
+      internalID: 4153999923358127585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_40
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 556
+        width: 4
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e581653d98d63e10800000000000000
+      internalID: 2177165639597262305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_41
+      rect:
+        serializedVersion: 2
+        x: 278
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b59fb5dde46a9b40800000000000000
+      internalID: 5447777671914165680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_42
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3df08f998fd00fdd0800000000000000
+      internalID: -2454446435530698797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_43
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5c730b1456d91a0800000000000000
+      internalID: -6801168529455856206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_44
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37d68633e7a88ce50800000000000000
+      internalID: 6829861109540351347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_45
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996cee2f0ef54a260800000000000000
+      internalID: 7107911531650533017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_46
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b5db9ab7b0c09920800000000000000
+      internalID: 2995105647543702961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_47
+      rect:
+        serializedVersion: 2
+        x: 470
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc1dbbef5ce0e26d0800000000000000
+      internalID: -3013454857119215153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_48
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 524
+        width: 30
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bee4121bf9bf3ec0800000000000000
+      internalID: -3584942290372333896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_49
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 455
+        width: 61
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb97b6b0692fc1370800000000000000
+      internalID: 8294771339960220094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_50
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 453
+        width: 62
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1328d8628e10f2e0800000000000000
+      internalID: -2094140281273703653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_51
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 460
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ea8bb7b42e234e0800000000000000
+      internalID: -2003290070400323992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_52
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 460
+        width: 61
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c924c1c5373c9d70800000000000000
+      internalID: 9051170055131507139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_53
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 320
+        width: 80
+        height: 129
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d29ad68a66a33b0800000000000000
+      internalID: -5531996318690890425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_54
+      rect:
+        serializedVersion: 2
+        x: 372
+        y: 321
+        width: 15
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d855a6c4dc5f5b610800000000000000
+      internalID: 1636484301718181261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_55
+      rect:
+        serializedVersion: 2
+        x: 388
+        y: 336
+        width: 16
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac2a839e191ee9170800000000000000
+      internalID: 8187229189405450954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_56
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 384
+        width: 33
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a2a8b14190ad2c0800000000000000
+      internalID: -4406199303462573477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_57
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 422
+        width: 5
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: def920db5b74aaca0800000000000000
+      internalID: -6004908307259416595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_58
+      rect:
+        serializedVersion: 2
+        x: 532
+        y: 422
+        width: 4
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5ee534567333ca0800000000000000
+      internalID: -6038421767312185884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_59
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 422
+        width: 13
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f412c9e10f24a3a90800000000000000
+      internalID: -7333475444146298545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_60
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 388
+        width: 35
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf879e5b35850740800000000000000
+      internalID: 5117643041612992440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_61
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 412
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802e73ee4db560890800000000000000
+      internalID: -7492199959996407288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_62
+      rect:
+        serializedVersion: 2
+        x: 286
+        y: 0
+        width: 298
+        height: 388
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baa2c367d558d5b40800000000000000
+      internalID: 5430643362140793515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_63
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 387
+        width: 19
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19249ae7b9eb3dcc0800000000000000
+      internalID: -3687394094832074095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_64
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 18
+        width: 279
+        height: 251
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee56c24c7fba06f50800000000000000
+      internalID: 6872682112003892718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TouhouBullets_65
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 4
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b1e243e6d876260800000000000000
+      internalID: 7090791642779491084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

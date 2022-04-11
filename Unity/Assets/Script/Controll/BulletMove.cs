@@ -45,7 +45,7 @@ public class BulletMove: ControlManager
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "Walls")
+        if (collision.gameObject.name == "Walls" || collision.gameObject.tag == "WALL")
         {
             check = true;
 

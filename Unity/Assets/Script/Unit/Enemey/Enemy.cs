@@ -2,14 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class Enemy : Unit
 {
+    public GameObject GB_HP_Bar;
+    public Image HPimg;
+
     private GameObject player;
 
     private GlitchEffect glitchEffect;
     private CircleCollider2D hitBox;
     private Animator ani;
+    private SpriteRenderer spriteRenderer;
 
     private Vector2 SPos;
 
@@ -20,6 +25,8 @@ public class Enemy : Unit
 
     void Start()
     {
+        GB_HP_Bar.SetActive(false);
+
         SPos = transform.position;
 
         Check = false;
@@ -27,6 +34,7 @@ public class Enemy : Unit
         glitchEffect = Camera.main.GetComponent<GlitchEffect>();
         hitBox = GetComponent<CircleCollider2D>();
         ani = GetComponent<Animator>();
+        spriteRenderer = GetComponent<SpriteRenderer>();
 
     }
 
@@ -35,6 +43,8 @@ public class Enemy : Unit
         SPos = transform.position;
 
         HP = 3;
+        
+        HPimg.fillAmount = HP / 3;
 
         Check = false;
         try {
@@ -64,10 +74,15 @@ public class Enemy : Unit
     {
         //Debug.Log("근접 공격!, 적 남은 체력 : " + HP);
         HP--;
+
+        HPimg.fillAmount = HP / 3f;
+
         if (HP < 1)
         {
             StartCoroutine(Glitch());
         }
+
+        StartCoroutine(SeeHPBar());
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -100,11 +115,11 @@ public class Enemy : Unit
     protected override void UnitLR(int size)
     {
         if (transform.position.x > Pos.x)
-            LR = -1;
+            spriteRenderer.flipX = true;
         else
-            LR = 1;
+            spriteRenderer.flipX = false;
 
-        transform.localScale = new Vector2(size * LR, size);
+        //transform.localScale = new Vector2(size * LR, size);
     }
 
     private IEnumerator PosMove()
@@ -112,8 +127,8 @@ public class Enemy : Unit
         ani.SetBool("Move", true);
         float time = 3f;
 
-        RandX = UnityEngine.Random.Range(-5f, 5f);
-        RandY = UnityEngine.Random.Range(-5f, 5f);
+        RandX = UnityEngine.Random.Range(-1.5f, 1.5f);
+        RandY = UnityEngine.Random.Range(-1.5f, 1.5f);
         Rand = UnityEngine.Random.Range(-2, 1);
 
         if (Rand == -2)
@@ -121,7 +136,14 @@ public class Enemy : Unit
         if (Rand == 0)
             Rand = 1;
 
-        Pos = SPos + new Vector2(RandX * Rand, RandY * Rand);
+        float distance = Vector3.Distance(player.transform.position, transform.position);
+
+        if (distance <= 3.0f)
+            Pos = new Vector2(player.transform.position.x + RandX * Rand, player.transform.position.y + RandY * Rand);
+         else
+            Pos = SPos + new Vector2(RandX * Rand, RandY * Rand);
+
+
 
         UnitLR(4);
 
@@ -158,6 +180,13 @@ public class Enemy : Unit
         yield return new WaitForSeconds((float)UnityEngine.Random.Range(2, 5));
 
         StartCoroutine(PosMove());
+    }
+
+    private IEnumerator SeeHPBar()
+    {
+        GB_HP_Bar.SetActive(true);
+        yield return new WaitForSeconds(0.8f);
+        GB_HP_Bar.SetActive(false);
     }
 
     protected override IEnumerator Glitch()

@@ -5,10 +5,13 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     private static GameManager instance = null;
-    private int level = 1;
-    private bool gameOver = false;
+    //private int level = 1;
+    //private bool gameOver = false;
 
     public GameObject GameOverUI;
+    public GameObject GameEndUI;
+    public bool gameOver = false;
+    public bool gameEnd = false;
 
     void Awake()
     {
@@ -38,6 +41,8 @@ public class GameManager : MonoBehaviour
 
     public void InitGame()
     {
+        gameOver = false;
+        gameEnd = false;
         GameOverUI.SetActive(false);
     }
 
@@ -58,7 +63,16 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+        gameOver = true;
+
         Time.timeScale = 0;
         GameOverUI.SetActive(true);
+    }
+
+    public void GameEnd()
+    {
+        gameEnd = true;
+
+        GameEndUI.SetActive(true);
     }
 }

@@ -9,7 +9,6 @@ public class Spawner : Unit
     public GameObject parent;
     public GameObject Enemy;
 
-    private int count = 0;
     private bool boss = false;
 
     private List<GameObject> Enemies = new List<GameObject>();

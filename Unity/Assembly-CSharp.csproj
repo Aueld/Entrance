@@ -81,6 +81,7 @@
     <Compile Include="Assets\Script\Controll\BulletMove.cs" />
     <Compile Include="Assets\Script\Unit\Enemey\Enemy.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_A.cs" />
+    <Compile Include="Assets\Script\System\HealthSystem\Scripts\HealthSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Script\Scene\LoadSceneController.cs" />
     <Compile Include="Assets\Script\Controll\Controller.cs" />
@@ -94,6 +95,7 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
     <Compile Include="Assets\Script\Scene\ScenesManager.cs" />
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\IgnoreUiRaycastWhenInactive.cs" />
+    <Compile Include="Assets\Script\System\HealthSystem\Scripts\IGetHealthSystem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\ChatController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TextMeshProFloatingText.cs" />
@@ -106,6 +108,8 @@
     <Compile Include="Assets\Photon\PhotonChat\Demos\DemoChat\FriendItem.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\EnvMapAnimator.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_UiFrameRateCounter.cs" />
+    <Compile Include="Assets\Script\Room\ExitD.cs" />
+    <Compile Include="Assets\Script\UI\GUIMenu.cs" />
     <Compile Include="Assets\Script\System\TextSentence.cs" />
     <Compile Include="Assets\Script\Unit\Player\Shot.cs" />
     <Compile Include="Assets\Script\Unit\Enemey\Boss\Boss.cs" />
@@ -114,10 +118,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\Script\System\GiMik.cs" />
     <Compile Include="Assets\Script\Unit\Player\Player.cs" />
+    <Compile Include="Assets\Script\System\HealthSystem\Scripts\LookAtCamera.cs" />
     <Compile Include="Assets\Script\System\GameManager.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\DropdownSample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Script\System\GlitchEffect.cs" />
+    <Compile Include="Assets\Script\System\HealthSystem\Scripts\HealthSystemComponent.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMPro_InstructionOverlay.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexColorCycler.cs" />
     <Compile Include="Assets\Script\UI\CursorMouse.cs" />
@@ -132,9 +138,11 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
     <Compile Include="Assets\Script\Controll\BulletTime.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
+    <Compile Include="Assets\Script\System\HealthSystem\Scripts\HealthBarUI.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
     <Compile Include="Assets\Script\Unit\Enemey\EBulletMove.cs" />
-    <Compile Include="Assets\Script\UI\GUIMenu.cs" />
+    <Compile Include="Assets\Script\System\EndingTextSystem.cs" />
+    <Compile Include="Assets\Script\System\EndTextSentence.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

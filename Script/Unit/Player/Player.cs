@@ -12,8 +12,9 @@ public class Player : PlayerSetting
     private Enemy enemy;
     private float shortDis;
     private float distance;
-    private bool coolTime = false;
 
+    private bool coolCheck = false;
+    
     private void Update()
     {
         Move();
@@ -35,6 +36,8 @@ public class Player : PlayerSetting
     {
         if (Input.GetKeyDown(KeyCode.Space) && MoveJudment() && !rollCheck)
         {
+            if (coolCheck)
+                return;
             StartCoroutine(CrtRoll());
         }
 
@@ -152,11 +155,12 @@ public class Player : PlayerSetting
 
     private IEnumerator CrtRoll()
     {
+        StartCoroutine(CollTime(3));
+
         Invincible = true;
         animator.SetBool("Roll", true);
         rollCheck = true;
 
-        roll.GetComponent<Image>().fillAmount = 0;
 
         float time = 2.5f;
         float minTime;
@@ -180,7 +184,6 @@ public class Player : PlayerSetting
                 break;
             }
 
-            roll.GetComponent<Image>().fillAmount = (1.0f / time);
             //yield return new WaitForFixedUpdate();
 
             time -= 0.1f;
@@ -190,7 +193,28 @@ public class Player : PlayerSetting
         }
     }
 
+    private IEnumerator CollTime(int time)
+    {
 
+        roll.GetComponent<Image>().fillAmount = 1;
+
+        coolCheck = true;
+        int cool = time * 100;
+        
+        while(cool > 0)
+        {
+            if (roll.GetComponent<Image>().fillAmount < 0.01f)
+            {
+                roll.GetComponent<Image>().fillAmount = 0;
+                coolCheck = false;
+                break;
+            }
+
+            roll.GetComponent<Image>().fillAmount -= (1.0f / cool);
+            cool--;
+            yield return Wait;
+        }
+    }
 
     private IEnumerator Invincibility()
     {
@@ -239,6 +263,15 @@ public class Player : PlayerSetting
 
         if (Invincible)
             return;
+
+        if(collision.gameObject.tag == "Enemy")
+        {
+            Hit();
+            
+            Invincible = true;
+            StartCoroutine(Glitch());
+            StartCoroutine(Invincibility());
+        }
 
         if (collision.gameObject.layer == 3)
         {

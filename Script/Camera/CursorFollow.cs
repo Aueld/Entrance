@@ -12,6 +12,7 @@ public class CursorFollow : ControlManager
     {
         while (true)
         {
+            Cursor.lockState = CursorLockMode.Confined;
             mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.LookAt(mouse);
 

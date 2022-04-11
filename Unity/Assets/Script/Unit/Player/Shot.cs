@@ -35,12 +35,17 @@ public class Shot : ControlManager
 
     private IEnumerator Updater()
     {
+
+
         while (true)
         {
             mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
             if (bullet > 0)
             {
+                if (GameManager.Instance.gameOver || GameManager.Instance.gameEnd)
+                    yield break;
+
                 if (Input.GetMouseButton(0))
                 {
                     pin.GetComponent<SoundManager>().PlayEff();

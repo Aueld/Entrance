@@ -21,8 +21,11 @@ public class EnemyBullet : ShotPatterns
 
     void Update()
     {
+        if (GameManager.Instance.gameOver || GameManager.Instance.gameEnd)
+            return;
+
         time++;
-        if (time > 2000)
+        if (time > 700)
         {
             time = 0;
             SearchPlayer();

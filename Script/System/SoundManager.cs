@@ -5,6 +5,9 @@ using UnityEngine;
 public class SoundManager : MonoBehaviour
 {
     private AudioSource audioSource;
+    private AudioSource audioSource2;
+
+    public GameObject audio;
 
     public AudioClip Shot;
     public AudioClip Reload;
@@ -15,6 +18,7 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        audioSource2 = audio.GetComponent<AudioSource>();
         lowPitRange = .55f;
         highPitRange = .75f;
     }
@@ -34,10 +38,10 @@ public class SoundManager : MonoBehaviour
     {
         float randomPitch = Random.Range(lowPitRange, highPitRange);
 
-        audioSource.volume = 0.35f;
+        audioSource2.volume = 0.35f;
 
-        audioSource.pitch = randomPitch;
-        audioSource.clip = Reload;
-        audioSource.Play();
+        audioSource2.pitch = randomPitch;
+        audioSource2.clip = Reload;
+        audioSource2.Play();
     }
 }
