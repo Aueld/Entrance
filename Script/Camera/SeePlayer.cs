@@ -4,26 +4,27 @@ using UnityEngine;
 
 public class SeePlayer : MonoBehaviour
 {
-    //È¸ÀüµÉ ¿ÀºêÁ§Æ®ÀÌ´Ù. -> ÁÖ·Î º¸½º³ª ¸ó½ºÅÍ¸¦ ÂüÁ¶ÇÏ¸é µÈ´Ù.
+    // íšŒì „ë  ì˜¤ë¸Œì íŠ¸ì´ë‹¤. => ì£¼ë¡œ ë³´ìŠ¤ë‚˜ ëª¬ìŠ¤í„°ë¥¼ ì°¸ì¡°
     public Transform center;
 
-    //¹Ù¶óº¼ ¹°Ã¼ÀÌ´Ù. - > ÁÖ·Î ÇÃ·¹ÀÌ¾î¸¦ ÂüÁ¶ÇÏ¸é µÈ´Ù.
+    // ë°”ë¼ë³¼ ë¬¼ì²´ì´ë‹¤. => ì£¼ë¡œ í”Œë ˆì´ì–´ë¥¼ ì°¸ì¡°
     private Transform target;
 
     private void Start()
     {
+        // íƒ€ê²Ÿ = í”Œë ˆì´ì–´
         target = GameObject.FindWithTag("Player").transform;
     }
 
     void Update()
     {
-        //º¤ÅÍ –y¼ÀÀ» ÅëÇØ ¹æÇâÀ» ±¸ÇÔ
+        // ë²¡í„° ë»´ì…ˆì„ í†µí•´ ë°©í–¥ì„ êµ¬í•¨
         var rot = target.position - center.position;
 
-        //x,yÀÇ °ªÀ» Á¶ÇÕÇÏ¿© Z¹æÇâ °ªÀ¸·Î º¯ÇüÇÔ. -> ~µµ ´ÜÀ§·Î º¯Çü
+        // x,yì˜ ê°’ì„ ì¡°í•©í•˜ì—¬ Zë°©í–¥ ê°’ìœ¼ë¡œ ë³€í˜•í•¨. => ~ë„ ë‹¨ìœ„ë¡œ ë³€í˜•
         var angle = Mathf.Atan2(rot.y, rot.x) * Mathf.Rad2Deg;
 
-        //ÇØ´ç Å¸°Ù ¹æÇâÀ¸·Î È¸ÀüÇÑ´Ù.
+        // í•´ë‹¹ íƒ€ê²Ÿ ë°©í–¥ìœ¼ë¡œ íšŒì „
         center.rotation = Quaternion.Euler(0, 0, angle);
     }
 }

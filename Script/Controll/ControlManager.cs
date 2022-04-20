@@ -8,9 +8,11 @@ public class ControlManager : MonoBehaviour
     protected static WaitForSeconds waitOne = new WaitForSeconds(0.5f);
     protected static WaitForSeconds fire = new WaitForSeconds(0.2f);
 
+    // 선언부
     protected Vector2 mouse;
     protected bool check;
 
+    // 앵글값 계산
     protected float GetAngle(Vector3 start, Vector3 end)
     {
         Vector3 v2 = end - start;

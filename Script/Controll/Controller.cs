@@ -3,8 +3,8 @@ using UnityEngine.EventSystems;
 
 public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IDragHandler, IEndDragHandler, IPointerClickHandler
 {
-    // Äµ¹ö½º - Á¶ÀÌÆĞµå »ı¼ºÇÒ À§Ä¡ Å©±â¸¸Å­ Åõ¸íÇÑ ÀÌ¹ÌÁö - Á¶ÀÌÆĞµå ¹è°æ - Á¶ÀÌ½ºÆ½
-    // ½ºÅ©¸³Æ®´Â Äµ¹ö½º¿¡, Á¶ÀÌÆĞµå ¹è°æ¿¡ Á¶ÀÌ½ºÆ½ µé¾îÀÖ´Â ÇÁ¸®ÆÕ, Á¶ÀÌ½ºÆ½
+    // ìº”ë²„ìŠ¤ - ì¡°ì´íŒ¨ë“œ ìƒì„±í•  ìœ„ì¹˜ í¬ê¸°ë§Œí¼ íˆ¬ëª…í•œ ì´ë¯¸ì§€ - ì¡°ì´íŒ¨ë“œ ë°°ê²½ - ì¡°ì´ìŠ¤í‹±
+    // ìŠ¤í¬ë¦½íŠ¸ëŠ” ìº”ë²„ìŠ¤ì—, ì¡°ì´íŒ¨ë“œ ë°°ê²½ì— ì¡°ì´ìŠ¤í‹± ë“¤ì–´ìˆëŠ” í”„ë¦¬íŒ¹, ì¡°ì´ìŠ¤í‹±
 
     public enum EventHandle { Click, Drag }
     public EventHandle ePrevEvent;
@@ -69,7 +69,7 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     {
         transJoyStickBackGround = joyStickBackGround.GetComponent<RectTransform>();
         transJoyStick = joyStick.GetComponent<RectTransform>();
-        fRadius = transJoyStickBackGround.rect.width * 0.5f; //Á¶ÀÌ½ºÆ½ÀÇ Çàµ¿¹İ°æ °è»ê
+        fRadius = transJoyStickBackGround.rect.width * 0.5f; //ì¡°ì´ìŠ¤í‹±ì˜ í–‰ë™ë°˜ê²½ ê³„ì‚°
 
         joyStick.SetActive(true);
         joyStickBackGround.SetActive(false);
@@ -95,8 +95,8 @@ public class Controller : MonoBehaviour, IPointerDownHandler, IPointerUpHandler,
     {
         vecJoystickValue = eventData.position - (Vector2)transJoyStickBackGround.position;
 
-        vecJoystickValue = Vector2.ClampMagnitude(vecJoystickValue / 32 /*µå·¡±× ÀÌµ¿·®*/, fRadius);
-        transJoyStick.localPosition = vecJoystickValue /* / 2 Á¶ÀÌ½ºÆ½ ÃÖ´ë Çàµ¿¹İ°æ*/;
+        vecJoystickValue = Vector2.ClampMagnitude(vecJoystickValue / 32 /*ë“œë˜ê·¸ ì´ë™ëŸ‰*/, fRadius);
+        transJoyStick.localPosition = vecJoystickValue /* / 2 ì¡°ì´ìŠ¤í‹± ìµœëŒ€ í–‰ë™ë°˜ê²½*/;
 
         vecJoyRotValue = new Vector3(transJoyStick.localPosition.x, 0f, transJoyStick.localPosition.y);
 
