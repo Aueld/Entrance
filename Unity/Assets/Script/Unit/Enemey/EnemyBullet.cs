@@ -25,7 +25,7 @@ public class EnemyBullet : ShotPatterns
             return;
 
         time++;
-        if (time > 700)
+        if (time > 100)
         {
             time = 0;
             SearchPlayer();

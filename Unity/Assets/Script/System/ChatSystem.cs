@@ -5,6 +5,7 @@ using TMPro;
 
 public class ChatSystem : MonoBehaviour
 {
+    // 대사 큐
     public Queue<string> sentences;
     public string currentSentence;
     public TextMeshPro textMesh;

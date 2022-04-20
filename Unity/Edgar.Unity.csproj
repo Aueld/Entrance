@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{3A1ABB67-D82E-1A0E-591B-6D65F1A19829}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -22,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2020_3_17;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2020_3_17;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -47,135 +48,141 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.15</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\RepeatModeOverride.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Legacy\Payloads\PipelinePayload.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Pipeline\PipelineRunner.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonGeneratorInputTypeGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Pipeline\PipelineTask.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\Extensions.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\Configs\AdvancedConfigGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Pipeline\IPipelineTask.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\PostProcessUtilsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\LevelGraph.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\IgnoreTilemapGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\GeneratorConstantsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonTilemapLayersHandlerGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\RoomTemplatesSet.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\ConnectionBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Exceptions\ConfigurationException.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\ReorderableList.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Diagnostics.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\Room.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Checks\DifferentLengthsOfDoors.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateInitializers\RoomTemplateInitializerUtilsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\GeneratorUtilsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateInitializers\RoomTemplateInitializerBaseGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Checks\WrongManualDoors.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\EditorStyles\RoomEditorStyle.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\DoorGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\PriorityCallbacks.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\Polygon2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\LevelGeneratorBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateUtilsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Exceptions\TimeoutException.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\Configs\FixedLevelGraphConfigGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\Configs\OtherConfigGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\ILevelGenerator.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Legacy\Payloads\Interfaces\IGraphBasedGeneratorPayload.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\PostProcessPrioritiesGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\DungeonGeneratorLevelGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\ActionResult.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\RoomBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Checks\NumberOfRooms.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\LevelGraphEditorData.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\PipelineTasks\PostProcessingTaskGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\IDiagnosticResult.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\AssetInfo.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateOutline\IRoomTemplateOutlineHandlerGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\DoorInstanceGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\PipelineTasks\DungeonGeneratorPostProcessingGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\TilemapLayersHandlerBaseGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\VersionedMonoBehaviour.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateLoaderGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Legacy\Payloads\Interfaces\IRandomGeneratorPayload.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\DoorsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\ITilemapLayersHandlerGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Attributes\ConditionalHideAttribute.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Checks\NumberOfCycles.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Rooms\RoomInfoGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\Connection.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Attributes\ExpandableAttribute.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\OutlineOverrideGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\LevelDescriptionGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Legacy\Payloads\Interfaces\IBenchmarkInfoPayload.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\Configs\DungeonGeneratorConfigGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\IntVector2Helper.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateOutline\BoundingBoxOutlineHandlerGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\RoomTemplateMigrationV1ToV2.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\RoomTemplateDiagnostics.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Legacy\Payloads\Interfaces\IGeneratorPayload.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Exceptions\GeneratorException.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Attributes\ReadOnlyAttribute.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\Configs\PostProcessingConfigGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Attributes\ExpandableScriptableObjectAttribute.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\GeneratorStats.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateSettingsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\OrthogonalLine.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\PipelineTasks\DungeonGeneratorTaskGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonGeneratorPayloadGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Checks\TimeoutLength.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Rooms\RoomInstanceGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonRoomTemplateInitializerGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\DungeonGeneratorUtils.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Diagnostics\Checks\LevelGraphRoomsCount.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\Configs\TilemapLayersStructureModeGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonGeneratorGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\LevelGraphs\EditorStyles\ConnectionEditorStyle.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonGeneratorBaseGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\PipelineTasks\FixedLevelGraphInputTaskGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\LevelInfoGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\GeneratedLevel.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateOutline\BoundingBoxOutlineHandler.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\IDoorModeDataGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\Door.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\GeneratedLevelBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\BaseClasses\LevelInfoBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\DoorLineGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\DungeonGenerator.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\LevelInfo.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\DoorInstance.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\PipelineTasks\DungeonGeneratorPostProcessingComponentGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateInitializers\RoomTemplateInitializerUtils.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\DungeonGenerator\PipelineTasks\DungeonGeneratorPostProcessBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Rooms\RoomInfo.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\PostProcessUtils.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\SimpleDoorModeSettingsGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\Doors.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\IgnoreTilemap.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\SimpleDoorModeDataGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\PostProcessPriorities.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateUtils.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\BaseClasses\RoomInfoBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplatesLoader.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\ManualDoorModeDataGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateSettings.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\Doors\HybridDoorModeDataGrid2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Utils\GeneratorConstants.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\OutlineOverride.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\TilemapLayers\TilemapLayersHandlerBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\LevelDescription.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\RoomTemplates\RoomTemplateInitializers\RoomTemplateInitializerBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Grid2D\Common\Rooms\RoomInstance.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Runtime\Common\Utils\IDungeonGeneratorPostProcessing.cs" />
+    <Analyzer Include="F:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Edgar-Unity-master\Runtime\Edgar.Unity.asmdef" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\RepeatModeOverride.cs" />
+    <Compile Include="Assets\Edgar\Runtime\FogOfWar\FogOfWarVisionGrid.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Payloads\PipelinePayload.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pipeline\PipelineRunner.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\MonoBehaviourExtensions.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\Extensions.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pipeline\IPipelineTask.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\ConnectionBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\ReorderableList.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Attributes\HelpBoxAttribute.cs" />
+    <Compile Include="Assets\Edgar\Runtime\FogOfWar\FogOfWarMode.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Attributes\LayerAttribute.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\Door.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\SimpleDoorModeData.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\PipelineTasks\PostProcessTask.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\IDiagnosticResult.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\ProUtils.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\Minimap\MinimapOverwriteMode.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\RoomTemplateMigrationV1ToV2.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\GeneratorStats.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplateSettings.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\DungeonGeneratorPayload.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\DungeonGenerator.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\EditorStyles\ConnectionEditorStyle.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\GeneratorUtils.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\ManualDoorModeData.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGeneratorBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\DoorInstance.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\PipelineTasks\DungeonGeneratorPostProcessBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Exceptions\GeneratorException.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Attributes\ExpandableScriptableObjectAttribute.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Rooms\RoomInstance.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\IDoorModeData.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\RoomTemplatesSet.cs" />
+    <Compile Include="Assets\Edgar\Runtime\FogOfWar\FogOfWarAdditionalCamera.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplateInitializers\RoomTemplateInitializerBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\RoomTemplatesLoaderTest.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\PriorityCallbacks.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\Polygon2D.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\Configs\FixedLevelGraphConfig.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\PipelineTasks\DungeonGeneratorInputBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\LevelGraphEditorData.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplateOutline\IRoomTemplateOutlineHandler.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\TilemapLayers\TilemapLayersHandlerBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Payloads\Interfaces\IBenchmarkInfoPayload.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplateOutline\BoundingBoxOutlineHandler.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\Configs\PostProcessConfig.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\DoorLine.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\DungeonGeneratorUtils.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\DungeonGeneratorBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\DungeonGeneratorInputType.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\Configs\AdvancedConfig.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\PostProcessUtils.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\TilemapLayers\IgnoreTilemap.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Exceptions\ConfigurationException.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplateInitializers\RoomTemplateInitializerUtils.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Checks\WrongManualDoors.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\EditorStyles\RoomEditorStyle.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\GeneratedLevel.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Checks\NumberOfRooms.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\Minimap\MinimapPostProcessLegacy.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\AssetInfo.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplatesLoader.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Payloads\Interfaces\IRandomGeneratorPayload.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelDescription.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\PlatformerGenerator\PipelineTasks\PlatformerGeneratorTask.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Payloads\Interfaces\IGeneratorPayload.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\PipelineTasks\DungeonGeneratorTask.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Checks\TimeoutLength.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\DungeonRoomTemplateInitializer.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\Minimap\MinimapDisplayMode.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pipeline\PipelineTask.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\Minimap\MinimapLayer.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\ILevelGenerator.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\HybridDoorModeData.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Attributes\ConditionalHideAttribute.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Rooms\RoomInfo.cs" />
+    <Compile Include="Assets\Edgar\Runtime\FogOfWar\FogOfWarTransitionMode.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Attributes\ExpandableAttribute.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\TilemapLayers\OutlineOverride.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Attributes\ReadOnlyAttribute.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\OrthogonalLine.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\LevelInfo.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\SimpleDoorModeSettings.cs" />
+    <Compile Include="Assets\Edgar\Runtime\FogOfWar\FogOfWar.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\PlatformerGenerator\PlatformerTilemapLayersHandler.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\GeneratorConstants.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\Room.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\ForceDifferentRoomTemplates.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\DoorSocketBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\RoomTemplateUtils.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Payloads\Interfaces\IGraphBasedGeneratorPayload.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\VersionedMonoBehaviour.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Checks\NumberOfCycles.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\RoomTemplateDiagnostics.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\PipelineTasks\FixedLevelGraphInputTask.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\PlatformerCameraController.cs" />
+    <Compile Include="Assets\Edgar\Runtime\FogOfWar\FogOfWarColorMode.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\LevelGraph.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\DungeonTilemapLayersHandler.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\Configs\OtherConfig.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\RoomBase.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\Minimap\MinimapPostProcess.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\Doors.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\TilemapLayers\ITilemapLayersHandler.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\LevelGraph\Connection.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\PlatformerGenerator\PlatformerRoomTemplateInitializer.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Benchmarks\BenchmarkRunner.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\PlatformerGenerator\PlatformerGenerator.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\DoorSocket.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Pro\SmartCoroutine.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Diagnostics.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Checks\DifferentLengthsOfDoors.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Exceptions\TimeoutException.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Utils\PostProcessPriorities.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\ActionResult.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\Configs\DungeonGeneratorConfig.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Utils\IntVector2Helper.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\DungeonGenerator\Configs\TilemapLayersStructureMode.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\Diagnostics\Checks\LevelGraphRoomsCount.cs" />
+    <Compile Include="Assets\Edgar\Runtime\Generators\Common\RoomTemplates\Doors\DoorDirection.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Edgar\Runtime\FogOfWar\FogOfWar.shader" />
+    <None Include="Assets\Edgar\Runtime\Edgar.Unity.asmdef" />
+    <None Include="Assets\Edgar\Runtime\Pro\Minimap\MinimapSingleColorTile.shader" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -355,9 +362,6 @@
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
       <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
@@ -424,6 +428,9 @@
     <Reference Include="Photon3Unity3D">
       <HintPath>Assets\Plugins\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
+    <Reference Include="EdgarSingleFile">
+      <HintPath>Assets\Edgar\Libraries\EdgarSingleFile.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
@@ -432,9 +439,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="EdgarSingleFile">
-      <HintPath>Assets\Edgar-Unity-master\Libraries\EdgarSingleFile.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

@@ -84,11 +84,16 @@ public class Player : PlayerSetting
 
     protected override void KeyDown_R()
     {
-        pin.GetComponent<SoundManager>().Reloading();
+        if (!GameManager.Instance.onFire)
+        {
+            pin.GetComponent<SoundManager>().Reloading();
 
-        Debug.Log("재장전 30발");
-        shot.bullet = 30;
-        cursorMouse.Reloading();
+            Debug.Log("재장전 30발");
+            shot.bullet = 30;
+            cursorMouse.Reloading();
+        }
+        else
+            return;
     }
 
     public override void Hit()

@@ -29,7 +29,7 @@ public class BossBullet : ShotPatterns
             return;
 
         time++;
-        if (time > 200)
+        if (time > 40)
         {
             time = 0;
             SearchPlayerWithBoss();

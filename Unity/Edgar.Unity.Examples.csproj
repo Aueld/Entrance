@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <LangVersion>latest</LangVersion>
+    <LangVersion>8.0</LangVersion>
   </PropertyGroup>
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <RootNamespace></RootNamespace>
+    <RootNamespace>
+    </RootNamespace>
     <ProjectGuid>{2056FC24-84E8-035E-8C07-C0E7ACF63965}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
@@ -22,7 +23,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2020_3_17;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2020_3_17;UNITY_2020_3;UNITY_2020;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;INCLUDE_DYNAMIC_GI;ENABLE_MONO_BDWGC;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;PLATFORM_STANDALONE;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_LEGACY_INPUT_MANAGER;PHOTON_UNITY_NETWORKING;PUN_2_0_OR_NEWER;PUN_2_OR_NEWER;PUN_2_19_OR_NEWER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -47,41 +48,105 @@
   <PropertyGroup>
     <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <UnityProjectGenerator>Package</UnityProjectGenerator>
-    <UnityProjectGeneratorVersion>2.0.12</UnityProjectGeneratorVersion>
+    <UnityProjectGeneratorVersion>2.0.15</UnityProjectGeneratorVersion>
     <UnityProjectType>Game:1</UnityProjectType>
-    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityBuildTarget>StandaloneWindows:5</UnityBuildTarget>
     <UnityVersion>2020.3.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\MyCustomPostProcessing.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\DoorsAnimation.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\CurrentRoomDetection\Scripts\CurrentRoomDetectionPostProcessing.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\Player2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\Random Tile\Scripts\RandomTile.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\CustomizeRoomTemplates\CustomRoomTemplateInitializerExample.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\CameraController.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\IInteractable.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\PlayerMovement2D.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\GameManagerBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Common\InteractableBase.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\CurrentRoomDetection\Scripts\CurrentRoomDetectionGameManager.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example1\Scripts\Example1PostProcessing.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example2\Scripts\Example2Exit.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example1\Scripts\Example1Exit.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\CurrentRoomDetection\Scripts\CurrentRoomDetectionRoomManager.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\CustomizeRoomTemplates\CustomRoomTemplateInitializerExample2.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example1\Scripts\Example1GameManager.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example2\Scripts\Example2Chest.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\CustomizeRoomTemplates\CustomTilemapLayersHandlerExample.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\CurrentRoomDetection\Scripts\CurrentRoomDetectionTriggerHandler.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example2\Scripts\Example2GameManager.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example1\Scripts\Example1Door.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\GeneratorDocs.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Resources\Docs\CurrentRoomDetection.cs" />
-    <Compile Include="Assets\Edgar-Unity-master\Examples\Grid2D\Example1\Scripts\Example1PostProcessingComponent.cs" />
+    <Analyzer Include="F:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Edgar-Unity-master\Examples\Edgar.Unity.Examples.asmdef" />
+    <Compile Include="Assets\Edgar\Examples\Common\Random Tile\Scripts\RandomTile.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\CustomizeRoomTemplates\CustomRoomTemplateInitializerExample.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\Tasks\GungeonInputSetupTask.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\MotorMonitor.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsRoomTemplatesConfig.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonGameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\MovingPlatformMotor2D.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\Levels\GungeonRoom.cs" />
+    <Compile Include="Assets\Edgar\Examples\Isometric1\Scripts\IsometricBrush.cs" />
+    <Compile Include="Assets\Edgar\Examples\CurrentRoomDetection\Scripts\CurrentRoomDetectionRoomManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\CustomizeRoomTemplates\CustomRoomTemplateInitializerExample2.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Rooftop\DeadCellsRooftopRoomTemplatesConfig.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonCurrentRoomHandler.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Levels\DeadCellsLevelType.cs" />
+    <Compile Include="Assets\Edgar\Examples\FogOfWarExample\Scripts\FogOfWarExamplePostProcess.cs" />
+    <Compile Include="Assets\Edgar\Examples\FogOfWarExample\Scripts\FogOfWarExampleTriggerHandler.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonTilemapLayersHandler.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\Moving Platforms\SimpleUpDown.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example1\Scripts\Example1GameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\DoorsAnimation.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonRoomTemplateInitializer.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\PlatformerPlayerController.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonRoomTemplatesConfig.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\SpriteDebug.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\PlatformerMotor2D.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsGameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\Player.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\Moving Platforms\SimpleBoost.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\PlayerMovement.cs" />
+    <Compile Include="Assets\Edgar\Examples\Platformer1\Scripts\Platformer1GameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\Isometric1\Scripts\Isometric1RoomTemplateInitializer.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example2\Scripts\Example2Exit.cs" />
+    <Compile Include="Assets\Edgar\Examples\MinimapExample\Scripts\MinimapExampleSetupLegacy.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\Tasks\GungeonPostProcessTask.cs" />
+    <Compile Include="Assets\Edgar\Examples\CurrentRoomDetection\Scripts\CurrentRoomDetectionTriggerHandler.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\Triggers\MessageOnCollision.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\Moving Platforms\SimpleCollapsable.cs" />
+    <Compile Include="Assets\Edgar\Examples\Isometric1\Scripts\Isometric1TilemapLayersHandler.cs" />
+    <Compile Include="Assets\Edgar\Examples\CurrentRoomDetection\Scripts\CurrentRoomDetectionPostProcess.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\DifferentSpeeds\DifferentSpeeds.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Tasks\DeadCellsInputSetupTask.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\RestrictedArea.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example1\Scripts\Example1Exit.cs" />
+    <Compile Include="Assets\Edgar\Examples\MinimapExample\Scripts\MinimapExampleSetup.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Tasks\DeadCellsPostProcessTask.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\MyCustomPostProcess.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Rooftop\DeadCellsRooftopInputSetup.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsParallax.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\CameraController.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\PlatformerAnimation2D.cs" />
+    <Compile Include="Assets\Edgar\Examples\Platformer1\Scripts\Platformer1PostProcess.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\LadderZone.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\Globals.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsRoomTemplateInitializer.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example1\Scripts\Example1PostProcess.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\Simple AI\SimpleAI.cs" />
+    <Compile Include="Assets\Edgar\Examples\Platformer3\Scripts\Platformers3GameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Levels\DeadCellsRoomType.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\Moving Platforms\SimpleLeftRight.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\CameraFollow.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example2\Scripts\Example2GameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Levels\DeadCellsRoom.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Rooftop\DeadCellsRooftopPostProcessTask.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsPatrol.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsPlayerController.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\IInteractable.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\GameManagerBase.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\CustomInput\CustomInputExample.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonRoomManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example2\Scripts\Example2Chest.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Example\LadderBody.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\CoroutineWithData\CoroutineWithDataExampleSimple.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\Levels\DeadCellsConnection.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\PlatformerMotor2DEditor.cs" />
+    <Compile Include="Assets\Edgar\Examples\FogOfWarExample\Scripts\FogOfWarExampleGameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\EasingFunctions.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsPlatformerAnimation2D.cs" />
+    <Compile Include="Assets\Edgar\Examples\Common\InteractableBase.cs" />
+    <Compile Include="Assets\Edgar\Examples\DeadCells\Scripts\DeadCellsCameraController.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\Levels\GungeonConnection.cs" />
+    <Compile Include="Assets\Edgar\Examples\CurrentRoomDetection\Scripts\CurrentRoomDetectionGameManager.cs" />
+    <Compile Include="Assets\Edgar\Examples\PC2D\Scripts\PlayerController2D.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\CoroutineWithData\CoroutineWithDataExampleAdvanced.cs" />
+    <Compile Include="Assets\Edgar\Examples\Resources\Docs\CustomizeRoomTemplates\CustomTilemapLayersHandlerExample.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\Levels\GungeonRoomType.cs" />
+    <Compile Include="Assets\Edgar\Examples\EnterTheGungeon\Scripts\GungeonDoor.cs" />
+    <Compile Include="Assets\Edgar\Examples\Example1\Scripts\Example1Door.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Edgar\Examples\Edgar.Unity.Examples.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
@@ -261,9 +326,6 @@
     <Reference Include="UnityEngine.VFXModule">
       <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
     </Reference>
-    <Reference Include="UnityEngine.VRModule">
-      <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEngine.VehiclesModule">
       <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
     </Reference>
@@ -330,6 +392,9 @@
     <Reference Include="Photon3Unity3D">
       <HintPath>Assets\Plugins\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
+    <Reference Include="EdgarSingleFile">
+      <HintPath>Assets\Edgar\Libraries\EdgarSingleFile.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
@@ -338,9 +403,6 @@
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.7.1\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
-    </Reference>
-    <Reference Include="EdgarSingleFile">
-      <HintPath>Assets\Edgar-Unity-master\Libraries\EdgarSingleFile.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>F:\Program Files\2020.3.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>

@@ -46,8 +46,12 @@ public class Shot : ControlManager
                 if (GameManager.Instance.gameOver || GameManager.Instance.gameEnd)
                     yield break;
 
+                // Åº ¹ß»ç
                 if (Input.GetMouseButton(0))
                 {
+                    // ¹ß»ç Áß
+                    GameManager.Instance.onFire = true;
+
                     pin.GetComponent<SoundManager>().PlayEff();
                     Debug.Log("Åº¼Ò¸ð : " + bullet);
                     bullet--;
@@ -67,7 +71,11 @@ public class Shot : ControlManager
                     //yield return fire;
                     yield return lon;
                 }
+                else
+                    GameManager.Instance.onFire = false;
             }
+            else
+                GameManager.Instance.onFire = false;
 
             yield return wait;
         }
