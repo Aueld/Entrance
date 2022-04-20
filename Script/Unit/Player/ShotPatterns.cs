@@ -26,22 +26,22 @@ public class ShotPatterns : MonoBehaviour
 
     private int rand;
 
-    //초기 중심 : 회전 되는 방향
     public float rot = 0f;
     public int Vertex = 3;
     public float sup = 3;
 
-    //스피드
     public float Speed = 3;//speed
 
-    //기타 데이터들
-    int m;
-    float a;
-    float phi;
-    List<float> v = new List<float>();
-    List<float> xx = new List<float>();
+    private int m;
+    private float a;
+    private float phi;
+    private List<float> v = new List<float>();
+    private List<float> xx = new List<float>();
 
     public AudioSource audioSource;
+
+    private GameObject cameraCut;
+    private bool cutCheck = false;
 
     private void Start()
     {
@@ -51,6 +51,8 @@ public class ShotPatterns : MonoBehaviour
         rot_Speed = 2f;
         parent = GameObject.FindWithTag("Pool");
         Player = GameObject.FindGameObjectWithTag("Player");
+
+        cameraCut = Camera.main.gameObject;
     }
 
     public void SearchPlayer()
@@ -89,6 +91,13 @@ public class ShotPatterns : MonoBehaviour
         shortDis = Vector3.Distance(gameObject.transform.position, Player.transform.position);
         //Debug.Log(shortDis);
 
+        // 보스와의 거리
+        if (shortDis < 15f && !cutCheck)
+        {
+            cutCheck = true;
+            GameManager.Instance.BossCut();
+        }
+        // 보스 - 플레이어 인식 거리
         if (shortDis < 20f)
         {
             //Center = Player.transform;
@@ -144,13 +153,11 @@ public class ShotPatterns : MonoBehaviour
 
     void ShapeInit()
     {
-        //요소들이 들어 있을 수 있으니 초기화 하기전에 Clear한다.
         v.Clear();
         xx.Clear();
 
         Vertex = Random.Range(3, 7);
 
-        //데이터 초기화
         m = (int)Mathf.Floor(sup / 2);
         a = 2 * Mathf.Sin(Mathf.PI / Vertex);
         phi = ((Mathf.PI / 2f) * (Vertex - 2f)) / Vertex;
@@ -159,7 +166,6 @@ public class ShotPatterns : MonoBehaviour
 
         for (int i = 1; i <= m; i++)
         {
-            //list.Insert(위치,요소) -> 해당 위치에 값을 집어넣습니다.
             v.Add(Mathf.Sqrt(sup * sup - 2 * a * Mathf.Cos(phi) * i * sup + a * a * i * i));
         }
 
@@ -172,15 +178,13 @@ public class ShotPatterns : MonoBehaviour
     public void ShapeShot()
     {
 
-        //rot값에 영향을 주지 않도록 별도로 dir값을 선언하였다.
         var dir = rot;
 
-        //꼭짓점 수 만큼 실행
         for (int r = 0; r < Vertex; r++)
         {
             for (int j = 1; j <= m; j++)
             {
-                #region //1차 생성
+                #region
 
                 for (int i = 0; i < maxBullet; i++)
                 {
@@ -197,7 +201,7 @@ public class ShotPatterns : MonoBehaviour
 
                 #endregion
 
-                #region //2차 생성
+                #region 
 
                 for (int i = 0; i < maxBullet; i++)
                 {
@@ -214,7 +218,7 @@ public class ShotPatterns : MonoBehaviour
 
                 #endregion
 
-                #region //3차 생성
+                #region
 
                 for (int i = 0; i < maxBullet; i++)
                 {
@@ -232,7 +236,6 @@ public class ShotPatterns : MonoBehaviour
 
                 #endregion
 
-                //모양을 완성한다.
                 dir += 360 / Vertex;
             }
         }
@@ -242,7 +245,6 @@ public class ShotPatterns : MonoBehaviour
 
     void CircleShot()
     {
-        //360번 반복
         for (int j = 0; j < 360; j += 13)
         {
             for (int i = 0; i < maxBullet; i++)

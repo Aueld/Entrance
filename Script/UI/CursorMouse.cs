@@ -31,18 +31,19 @@ public class CursorMouse : ControlManager
             mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mouse;
 
+            // 마우스 입력시 커서 회전
             if (Input.GetMouseButton(0) && shot.bullet > 0)
             {
                 now.sprite = change[0];
 
-                if (rotateSpeed < 7200)
-                    rotateSpeed += 60;
+                if (rotateSpeed < 1200)
+                    rotateSpeed += 10;
             }
             else if (now.sprite != change[1])
                 now.sprite = change[1];
             
             else if (rotateSpeed > 15)
-                rotateSpeed -= 10;
+                rotateSpeed -= 20;
 
             yield return wait;
         }

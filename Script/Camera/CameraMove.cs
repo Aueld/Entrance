@@ -21,7 +21,7 @@ public class CameraMove : BulletMove
     {
         // 던전 진입시 입장 딜레이 => 맵 생성 및 플레이어 이동 카메라 이동 로딩
         if (SceneManager.GetActiveScene().name == "GameDengeonScene")
-            Invoke("Loading", 1f);
+            Invoke("Loading", 0.8f);
 
         StartCoroutine(Updater());
     }

@@ -7,7 +7,7 @@ public class SoundManager : MonoBehaviour
     private AudioSource audioSource;
     private AudioSource audioSource2;
 
-    public GameObject audio;
+    public GameObject audioo;
 
     public AudioClip Shot;
     public AudioClip Reload;
@@ -18,7 +18,7 @@ public class SoundManager : MonoBehaviour
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        audioSource2 = audio.GetComponent<AudioSource>();
+        audioSource2 = audioo.GetComponent<AudioSource>();
         lowPitRange = .55f;
         highPitRange = .75f;
     }
