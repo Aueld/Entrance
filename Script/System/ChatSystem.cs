@@ -5,20 +5,24 @@ using TMPro;
 
 public class ChatSystem : MonoBehaviour
 {
-    // 대사 큐
-    public Queue<string> sentences;
+    public Queue<string> sentences; // 대사 큐
+    public TextMeshPro textMesh;    // TMP
+    public GameObject quad;         // quad
+
     public string currentSentence;
-    public TextMeshPro textMesh;
-    public GameObject quad;
 
     public void Ondialogue(string[] lines, Transform pos)
     {
+        // 대사 창의 위치
         transform.position = pos.position;
 
+        // string 큐초기화
         sentences = new Queue<string>();
         sentences.Clear();
+
         foreach (var line in lines)
         {
+            // 한 큐 ( 한 문장 ) 씩 출력
             sentences.Enqueue(line);
         }
         StartCoroutine(DialogueFlow(pos));
@@ -28,18 +32,23 @@ public class ChatSystem : MonoBehaviour
     {
         yield return null;
 
+        // 출력 될 strig 큐가 남았을 경우
         while(sentences.Count > 0)
         {
+            // 다음 내용 출력
             currentSentence = sentences.Dequeue();
             textMesh.text = currentSentence;
 
+            // 대사 배경 크기 조정
             float x = textMesh.preferredWidth;
             x = (x > 3) ? 3 : x + 0.3f;
 
+            // 위치 조정
             quad.transform.localScale = new Vector2(x, textMesh.preferredHeight + 0.3f);
 
             transform.position = new Vector2(pos.position.x, pos.position.y + textMesh.preferredHeight / 2);
 
+            // 3초마다 반복
             yield return new WaitForSeconds(3f);
         }
         Destroy(gameObject);
