@@ -16,7 +16,7 @@ public class ChatSystem : MonoBehaviour
         // 대사 창의 위치
         transform.position = pos.position;
 
-        // string 큐초기화
+        // string 큐 초기화
         sentences = new Queue<string>();
         sentences.Clear();
 
