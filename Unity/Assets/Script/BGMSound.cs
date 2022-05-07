@@ -5,8 +5,8 @@ using UnityEngine.UI;
 
 public class BGMSound : MonoBehaviour
 {
-    AudioSource BGM;
-    public Slider slider;
+    AudioSource BGM;        // 음향 파일
+    public Slider slider;   // 음향 조절 바
 
     private void Start()
     {
@@ -15,6 +15,7 @@ public class BGMSound : MonoBehaviour
 
     public void BGMControl()
     {
+        // 슬라이드 값에 대입
         BGM.volume = slider.value;
     }
 }
