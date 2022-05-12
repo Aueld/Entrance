@@ -4,18 +4,22 @@ using UnityEngine;
 
 public class SoundManager : MonoBehaviour
 {
+    // 오디오 소스
     private AudioSource audioSource;
     private AudioSource audioSource2;
 
+    // 오디오 파일
     public GameObject audioo;
 
+    // 오디오 클립
     public AudioClip Shot;
     public AudioClip Reload;
 
+    // 최저음, 최고음
     public float lowPitRange;
     public float highPitRange;
 
-    void Start()
+    private void Start()
     {
         audioSource = GetComponent<AudioSource>();
         audioSource2 = audioo.GetComponent<AudioSource>();
@@ -23,6 +27,7 @@ public class SoundManager : MonoBehaviour
         highPitRange = .75f;
     }
     
+    // 이펙트 효과음 재생
     public void PlayEff()
     {
         float randomPitch = Random.Range(lowPitRange, highPitRange);
@@ -34,6 +39,7 @@ public class SoundManager : MonoBehaviour
         audioSource.Play();
     }
 
+    // 재장전 효과음 재생
     public void Reloading()
     {
         float randomPitch = Random.Range(lowPitRange, highPitRange);

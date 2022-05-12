@@ -10,6 +10,7 @@ public class EndTextSentence : MonoBehaviour
 
     private void Update()
     {
+        // 게임 종료시
         if (EndCanvas.activeSelf && GameManager.Instance.gameEnd)
         {
             GameManager.Instance.gameEnd = false;
