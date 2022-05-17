@@ -6,26 +6,26 @@ using UnityEngine.UI;
 
 public class Enemy : Unit
 {
-    public GameObject GB_HP_Bar;
-    public Image HPimg;
+    public GameObject GB_HP_Bar;            // 체력바 오브젝트
+    public Image HPimg;                     // 체력바 이미지
 
-    private GameObject player;
+    private GameObject player;              // 플레이어
 
-    private GlitchEffect glitchEffect;
-    private CircleCollider2D hitBox;
+    private GlitchEffect glitchEffect;      // 글리치 이펙트
+    private CircleCollider2D hitBox;        // 유닛 히트 박스
     private Animator ani;
     private SpriteRenderer spriteRenderer;
 
-    private Vector2 SPos;
+    private Vector2 SPos;                   // 유닛 생성 초기 위치
 
     private float DelayTime = 5f;
 
-    private bool playerCheck = false;
-    private bool wallCheck = false;
+    private bool playerCheck = false;       // 플레이어 판단
+    private bool wallCheck = false;         // 벽 판단
 
     void Start()
     {
-        GB_HP_Bar.SetActive(false);
+        //GB_HP_Bar.SetActive(false);
 
         SPos = transform.position;
 
@@ -38,8 +38,11 @@ public class Enemy : Unit
 
     }
 
+    // 유닛 활성화 시
     private void OnEnable()
     {
+        GB_HP_Bar.SetActive(false);
+
         SPos = transform.position;
 
         HP = 3;
@@ -57,9 +60,9 @@ public class Enemy : Unit
     void Update()
     {
         //if (GetDistance(transform.position.x, transform.position.y, player.transform.position.x, player.transform.position.y) < 1)
-            //Debug.Log("����");
+            //Debug.Log("감지");
 
-        if (!playerCheck)
+        if (!playerCheck) // 자동 패트롤 무빙
         {
             if (!Check)
                 StartCoroutine(WaitMove());
@@ -72,7 +75,8 @@ public class Enemy : Unit
 
     public override void Hit()
     {
-        //Debug.Log("���� ����!, �� ���� ü�� : " + HP);
+        //Debug.Log("근접 공격!, 적 남은 체력 : " + HP);
+        // 피격시
         HP--;
 
         HPimg.fillAmount = HP / 3f;
@@ -112,8 +116,9 @@ public class Enemy : Unit
         return distance;
     }
 
-    protected override void UnitLR(int size)
+    protected override void UnitLR()
     {
+        // 좌우 반전
         if (transform.position.x > Pos.x)
             spriteRenderer.flipX = true;
         else
@@ -144,8 +149,8 @@ public class Enemy : Unit
             Pos = SPos + new Vector2(RandX * Rand, RandY * Rand);
 
 
-
-        UnitLR(4);
+        // 좌우 반전
+        UnitLR();
 
         while (Check)
         {

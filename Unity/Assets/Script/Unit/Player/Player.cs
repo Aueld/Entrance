@@ -14,7 +14,7 @@ public class Player : PlayerSetting
     private float distance;
 
     private bool coolCheck = false;
-    
+
     private void Update()
     {
         Move();
@@ -48,10 +48,10 @@ public class Player : PlayerSetting
             Animate((AniState)lastState);
 
         else if (v <= 0)
-            HorizontalSet(h, (int)AniState.Front, (int)AniState.FrontSide, 3);
+            HorizontalSet(h, (int)AniState.Front, (int)AniState.FrontSide);
 
         else if (v > 0)
-            HorizontalSet(h, (int)AniState.Back, (int)AniState.BackSide, 3);
+            HorizontalSet(h, (int)AniState.Back, (int)AniState.BackSide);
     }
 
     protected override void KeyDown_E()
@@ -78,7 +78,7 @@ public class Player : PlayerSetting
                     shortDis = distance;
                 }
             }
-            Debug.Log(targetEnemy.name + " øÕ¿« ∞≈∏Æ : " + shortDis);
+            Debug.Log(targetEnemy.name + " ÏôÄÏùò Í±∞Î¶¨ : " + shortDis);
         }
     }
 
@@ -88,7 +88,7 @@ public class Player : PlayerSetting
         {
             pin.GetComponent<SoundManager>().Reloading();
 
-            Debug.Log("¿Á¿Â¿¸ 30πﬂ");
+            Debug.Log("Ïû¨Ïû•Ï†Ñ 30Î∞ú");
             shot.bullet = 30;
             cursorMouse.Reloading();
         }
@@ -103,13 +103,13 @@ public class Player : PlayerSetting
 
         if (HP > 0)
         {
-            //Debug.Log("«√∑π¿ÃæÓ HiT!!");
+            //Debug.Log("ÌîåÎ†àÏù¥Ïñ¥ HiT!!");
             HP--;
         }
         if(HP <= 0)
         {
             GameManager.Instance.GameOver();
-            //Debug.Log("«√∑π¿ÃæÓ Finish");
+            //Debug.Log("ÌîåÎ†àÏù¥Ïñ¥ Finish");
         }
     }
     
@@ -119,7 +119,7 @@ public class Player : PlayerSetting
         KeyUp();
     }
 
-    private void HorizontalSet(float h2, int state1, int state2, int size)
+    private void HorizontalSet(float h2, int state1, int state2)
     {
         if (h2 == 0)
         {
@@ -132,17 +132,24 @@ public class Player : PlayerSetting
             lastState = state2;
         }
 
-        UnitLR(size);
+        UnitLR();
     }
 
-    protected override void UnitLR(int size)
+    protected override void UnitLR()
     {
+        // Ï¢åÏö∞ Î∞òÏ†Ñ
         if (h < 0)
-            LR = -1;
+            spriteRenderer.flipX = true;
         else
-            LR = 1;
+            spriteRenderer.flipX = false;
+
+
+        //if (h < 0)
+        //    LR = -1;
+        //else
+        //    LR = 1;
         
-        transform.localScale = new Vector2(size * LR, size);
+        //transform.localScale = new Vector2(size * LR, size);
     }
 
     private void Animate(AniState state)

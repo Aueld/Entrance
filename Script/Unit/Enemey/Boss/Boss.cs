@@ -45,7 +45,7 @@ public class Boss : Unit
     void Update()
     {
         //if (GetDistance(transform.position.x, transform.position.y, player.transform.position.x, player.transform.position.y) < 1)
-            //Debug.Log("°¨Áö");
+            //Debug.Log("ê°ì§€");
 
         if (!playerCheck)
         {
@@ -60,7 +60,7 @@ public class Boss : Unit
 
     public override void Hit()
     {
-        //Debug.Log("±ÙÁ¢ °ø°Ý!, Àû ³²Àº Ã¼·Â : " + HP);
+        //Debug.Log("ê·¼ì ‘ ê³µê²©!, ì  ë‚¨ì€ ì²´ë ¥ : " + HP);
         HP--;
 
 
@@ -98,7 +98,7 @@ public class Boss : Unit
         return distance;
     }
 
-    protected override void UnitLR(int size)
+    protected override void UnitLR()
     {
         if (transform.position.x > Pos.x)
             spriteRenderer.flipX = true;
@@ -122,7 +122,7 @@ public class Boss : Unit
 
         Pos = new Vector2(player.transform.position.x + RandX * Rand, player.transform.position.y + RandY * Rand);
 
-        UnitLR(10);
+        UnitLR();
 
         while (Check)
         {

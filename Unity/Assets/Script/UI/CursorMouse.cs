@@ -5,13 +5,13 @@ using UnityEngine.UI;
 
 public class CursorMouse : ControlManager
 {
-    public GameObject bullet;
-    public Sprite[] change;
+    public GameObject bullet;   // 불릿 오브젝트
+    public Sprite[] change;     // 스프라이트 변경
 
-    private Shot shot;
-    private SpriteRenderer now;
-    private Quaternion reRot;
-    private float rotateSpeed;
+    private Shot shot;          // Shot CS
+    private SpriteRenderer now; // 현재 스프라이트
+    private Quaternion reRot;   // 회전 값
+    private float rotateSpeed;  // 회전 속도
 
     void Start()
     {
@@ -28,10 +28,11 @@ public class CursorMouse : ControlManager
     {
         while (true)
         {
+            // 마우스 위치값
             mouse = Camera.main.ScreenToWorldPoint(Input.mousePosition);
             transform.position = mouse;
 
-            // ���콺 �Է½� Ŀ�� ȸ��
+            // 마우스 입력시 커서 회전
             if (Input.GetMouseButton(0) && shot.bullet > 0)
             {
                 now.sprite = change[0];
@@ -49,6 +50,7 @@ public class CursorMouse : ControlManager
         }
     }
 
+    // 재장전
     public void Reloading()
     {
         StartCoroutine(Reload());
@@ -59,17 +61,21 @@ public class CursorMouse : ControlManager
         //rotateSpeed = 0f;
         while(true)
         {
+            // 회전 속도가 일정 이하가 되면 회전값 멈춤
             if (rotateSpeed < 10f)
             {
                 transform.rotation = Quaternion.Euler(0, 0, 0);
                 break;
             }
+
+            /* { 더미데이터. 
             //if (transform.rotation.z > 359f || transform.rotation.z < -359f)
             //{
             //    transform.rotation = Quaternion.Euler(0, 0, 0);
             //    break;
             //}
             //transform.Rotate(0, 0, 0.5f, Space.Self);
+            } */
 
             yield return wait;
         }
@@ -79,6 +85,7 @@ public class CursorMouse : ControlManager
     {
         while (true)
         {
+            // 회전
             transform.Rotate(0, 0, Time.deltaTime * rotateSpeed, Space.Self);
 
             yield return wait;
