@@ -36,11 +36,11 @@ public class EndingTextSystem: MonoBehaviour
             text.text = currentSentence;
 
             // 5초간 기다림
-            yield return new WaitForSeconds(5f);
+            yield return new WaitForSeconds(3f);
         }
 
         // 5초간 기다림
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
 
         // 메인화면으로
         LoadSceneController.LoadScene("mainStartScene");

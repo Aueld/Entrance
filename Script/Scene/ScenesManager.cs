@@ -11,7 +11,7 @@ public class ScenesManager : MonoBehaviour
     public void OnClickStartButton()
     {
         // 타이틀에서 버튼 누를시 마을로 이동
-        LoadSceneController.LoadScene("GameHomeScene");
+        LoadSceneController.LoadScene("GamePrologueScene");
     }
 
     public void OnClickLoadGame()

@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Shot : ControlManager
 {
@@ -11,15 +12,17 @@ public class Shot : ControlManager
 
     public int maxBullet = 200;
     public int bullet;
+    public Text bulletCount;
 
     private List<GameObject> bullets = new List<GameObject>();
     private GameObject pin;
 
     void Start()
     {
+
         pin = GameObject.FindWithTag("Gun");
 
-        // ¿ÀºêÁ§Æ® Ç®¸µ ±¸Çö
+        // ì˜¤ë¸Œì íŠ¸ í’€ë§ êµ¬í˜„
         for (int i = 0; i < maxBullet; i++)
         {
 
@@ -46,15 +49,17 @@ public class Shot : ControlManager
                 if (GameManager.Instance.gameOver || GameManager.Instance.gameEnd)
                     yield break;
 
-                // Åº ¹ß»ç
+                // íƒ„ ë°œì‚¬
                 if (Input.GetMouseButton(0))
                 {
-                    // ¹ß»ç Áß
+                    // ë°œì‚¬ ì¤‘
                     GameManager.Instance.onFire = true;
 
                     pin.GetComponent<SoundManager>().PlayEff();
-                    Debug.Log("Åº¼Ò¸ğ : " + bullet);
+                    Debug.Log("íƒ„ì†Œëª¨ : " + bullet);
                     bullet--;
+                    
+                    bulletCount.text = bullet + " / 30";
 
                     for (int i = 0; i < maxBullet; i++)
                     {

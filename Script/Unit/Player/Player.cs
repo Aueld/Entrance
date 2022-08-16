@@ -90,6 +90,7 @@ public class Player : PlayerSetting
 
             Debug.Log("재장전 30발");
             shot.bullet = 30;
+            shot.bulletCount.text = "30 / 30";
             cursorMouse.Reloading();
         }
         else

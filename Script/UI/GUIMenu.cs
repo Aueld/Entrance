@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
 
 public class GUIMenu : MonoBehaviour
 {
@@ -14,46 +15,55 @@ public class GUIMenu : MonoBehaviour
 
     void Start()
     {
-        // 게임 시작시
-        GameManager.Instance.InitGame();
-        canvas.SetActive(false);
-        bigmap.SetActive(false);
+        try {
+            // 게임 시작시
+            GameManager.Instance.InitGame();
+            canvas.SetActive(false);
+            bigmap.SetActive(false);
+        } catch (Exception e) { }
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.M) && !mapCheck)
+        try
         {
-            bigmap.SetActive(true);
-            minimap.SetActive(false);
-            mapCheck = true;
-        }
-        else if (Input.GetKeyDown(KeyCode.M) && mapCheck)
-        {
-            bigmap.SetActive(false);
-            minimap.SetActive(true);
-            mapCheck = false;
-        }
-
-        // Esc 입력시
-        if (Input.GetKeyDown(KeyCode.Escape) && !check)
-        {
-            minimap.SetActive(false);
-            canvas.SetActive(true);
-            check = true;
-            GameManager.Instance.PauseGame();   // 게임 정지
-            
-        } else if(Input.GetKeyDown(KeyCode.Escape) && check)
-        {
-            if(mapCheck)
+            if (Input.GetKeyDown(KeyCode.M) && !mapCheck)
+            {
+                bigmap.SetActive(true);
+                minimap.SetActive(false);
+                mapCheck = true;
+            }
+            else if (Input.GetKeyDown(KeyCode.M) && mapCheck)
             {
                 bigmap.SetActive(false);
+                minimap.SetActive(true);
                 mapCheck = false;
             }
-            minimap.SetActive(true);
-            canvas.SetActive(false);
-            check = false;
-            GameManager.Instance.ContinueGame();// 게임 재개
+
+            // Esc 입력시
+            if (Input.GetKeyDown(KeyCode.Escape) && !check)
+            {
+                minimap.SetActive(false);
+                canvas.SetActive(true);
+                check = true;
+                GameManager.Instance.PauseGame();   // 게임 정지
+
+            }
+            else if (Input.GetKeyDown(KeyCode.Escape) && check)
+            {
+                if (mapCheck)
+                {
+                    bigmap.SetActive(false);
+                    mapCheck = false;
+                }
+                minimap.SetActive(true);
+                canvas.SetActive(false);
+                check = false;
+                GameManager.Instance.ContinueGame();// 게임 재개
+            }
+        } catch (Exception e)
+        {
+            Debug.Log(e.StackTrace);
         }
     }
 }
