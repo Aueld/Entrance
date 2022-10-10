@@ -1,4 +1,4 @@
 # Entrance
 
-JJUniv. Game Contents, Team Project
+JJUniv. Game Contents, Team Project..
  
